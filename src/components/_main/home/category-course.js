@@ -12,7 +12,7 @@ export default function CategoryCourses({ categories }) {
     <div className='category-courses py-5 md:py-8'>
       {/* Header */}
       <div className='relative h-20 md:h-50 mt-5 md:mt-10 border border-gray-200 rounded-md  '>
-        <Link href='/'>
+        <Link href='https://7web.lt/'>
           <Image
             src='/banner-2.png'
             alt='banners'
