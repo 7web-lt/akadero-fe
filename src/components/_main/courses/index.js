@@ -68,7 +68,7 @@ export default function CoursesList({
   return (
     <div className='courses-list mt-4 md:mt-8 space-y-4'>
       <div className='relative h-20 md:h-50 border border-gray-200 rounded-md '>
-        <Link href='/'>
+        <Link href='https://7web.lt/'>
           <Image
             src='/banner-2.png'
             alt='banners'
