@@ -32,6 +32,9 @@ export default function Breadcrumbs() {
       name: formattedName,
       href: idx === segments.length - 1 ? null : href,
     };
+  }).filter((crumb, idx, arr) => {
+    // Remove duplicate breadcrumb names
+    return idx === arr.findIndex(c => c.name === crumb.name);
   });
 
   return (
