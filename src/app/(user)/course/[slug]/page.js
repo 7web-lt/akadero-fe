@@ -80,7 +80,7 @@ export default async function CoursesPage({ params }) {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>{data?.title}</BreadcrumbPage>
+              <BreadcrumbPage>{decodeURIComponent(data?.title || slug)}</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
