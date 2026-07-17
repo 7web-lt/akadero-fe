@@ -65,7 +65,7 @@ export default async function OrganizersDetailPage({ params }) {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>{data?.organizer?.name}</BreadcrumbPage>
+              <BreadcrumbPage>{decodeURIComponent(data?.organizer?.name || oid)}</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
