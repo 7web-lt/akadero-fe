@@ -85,7 +85,7 @@ export default async function Page(props) {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>{categoryData?.name}</BreadcrumbPage>
+              <BreadcrumbPage>{decodeURIComponent(categoryData?.name || category)}</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
