@@ -24,8 +24,12 @@ export default function Breadcrumbs() {
       href = "/admin/dashboard";
     }
 
+    // Decode URL-encoded characters (e.g., %C4%97 -> ė)
+    const decodedSegment = decodeURIComponent(segment);
+    const formattedName = decodedSegment.charAt(0).toUpperCase() + decodedSegment.slice(1);
+
     return {
-      name: segment.charAt(0).toUpperCase() + segment.slice(1),
+      name: formattedName,
       href: idx === segments.length - 1 ? null : href,
     };
   });
