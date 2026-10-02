@@ -15,7 +15,7 @@ export default function CategoryCourses({ categories }) {
         <Link href='https://www.kaina24.lt/p/swissovit-omega-3-tg-600-mg-zuvu-taukai-30-kapsuliu/'>
           <Image
             src='/banner-2.png'
-            alt='banners'
+            alt='swissovit-reklama'
             fill
             className='object-cover rounded-md'
           />
